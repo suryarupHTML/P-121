@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: rgb(249, 220, 183);
+    border: 10px solid orange ;
+    border-radius: 5px;
+    border-style: groove;
+}
+h1 {
+    color: rgb(8, 8, 103); 
+    width: 500px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer {
+    background-color: rgb(203, 224, 243);
+    text-shadow: 5px 5px 5px black;
+}
+h2 {
+  color: rgba(240, 248, 255, 0);  
+}
+.test_image_and_result {
+    background-color: rgba(255, 123, 0, 0.453);
+    padding-left: 50px;
+}
+.test_image_and_result:hover {
+    background-color: rgba(255, 123, 0, 0.453);
+}
+#conclusion {
+    background-color: rgb(166, 97, 12);
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: beige;
+    border: 5px solid;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: rgb(252, 90, 90);
+}

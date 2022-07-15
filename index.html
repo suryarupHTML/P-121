@@ -1,0 +1,194 @@
+<html>
+
+    <head>
+        <title>Real Time Image Identification App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 class="btn btn-info">Case Study --- Google Lens / MobileNet</h1>
+        <br><br>
+        <div class="container">
+            <ol>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="1.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Headset</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>Headset</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Draw</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="2.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Phone</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>Game hub</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Google Lens</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="3.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Butterfly</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>flower</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>No one is appropriate</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="4.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Bottle</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>Steel bottle</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>MobileNet</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="5.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Can't be determined</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>Painting</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>No one is appropriate</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="6.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Mouse</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>Mouse</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Draw</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="7.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Ball</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>Ball</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Draw</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+                <div class="test_image_and_result col-xs-12 btn btn-primary">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <img src="8.jpg" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>Google Lens - </b>
+                        <span>Backpack</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on - <b>MobileNet - </b>
+                        <span>Backpack</span>
+                    </h5>
+                    <div class="mini_result col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Draw</h4>
+                    </div>
+                </div>
+                <h2>A</h2>
+            </ol>
+            <div id="conclusion">
+                <br>
+                <H5>8 IMAGES HAVE BEEN TESTED.</H5>
+                <H5>GOOGLE LENS HAS PREDICTED 1 CORRECTLY.</H5>
+                <H5>MOBILE NET HAS PREDICTED 1 CORRECTLY.</H5>
+                <H5>4 ARE DRAW.</H5>
+                <H5>OTHER 2 ARE NOT APPROPRIATELY DETECTED BY ANY.</H5>
+                <br>
+            </div>
+        </div>
+        <br> 
+    </body>
+    <footer>Developed by - Suryarup</footer>
+</html>
